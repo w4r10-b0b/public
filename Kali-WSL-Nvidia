@@ -1,1 +1,10 @@
-
+sudo apt install pciutils nvidia-installer-cleanup glx-alternative-nvidia -y
+wget https://http.kali.org/kali/pool/non-free/n/nvidia-graphics-drivers/nvidia-alternative_460.73.01-1_amd64.deb
+wget https://http.kali.org/kali/pool/non-free/n/nvidia-graphics-drivers/nvidia-legacy-check_460.73.01-1_amd64.deb
+wget https://http.kali.org/kali/pool/non-free/n/nvidia-graphics-drivers/libnvidia-ml1_460.73.01-1_amd64.deb
+wget https://http.kali.org/kali/pool/non-free/n/nvidia-graphics-drivers/nvidia-smi_460.73.01-1_amd64.deb
+mkdir /tmp/nvidia && cd /tmp/nvidia
+sudo dpkg -i nvidia-legacy-check_460.73.01-1_amd64.deb --force-confdef
+sudo dpkg -i nvidia-alternative_460.73.01-1_amd64.deb --force-confdef
+sudo dpkg -i nvidia-smi_460.73.01-1_amd64.deb --force-confdef
+sudo dpkg -i nvidia-smi_460.73.01-1_amd64.deb --force-confdef
